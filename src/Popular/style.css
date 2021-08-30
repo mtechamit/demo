@@ -1,0 +1,84 @@
+.line-through{text-decoration: line-through;}
+.bold{font-weight: bold;}
+.fl-left{float: left;}
+
+.popular-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.2rem;
+}
+
+  
+  @media (max-width: 950px) {
+    .popular-wrapper{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 720px) {
+    .popular-wrapper{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .popular-wrapper{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+.popular-card{
+   width: 230px; 
+   padding: 0px; 
+   border-radius: 5%;
+   border:grey solid 1px;  
+   margin: 10px auto;
+   background: #fff;
+}
+
+p.offerNumber{font-size: 0.8rem; color: #00ff00; font-weight: bold; } 
+
+p.offerNumber span{
+    background: #00ff00;
+    padding: 2px 8px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 10px;
+    color: #fff;
+    font-size: 0.9rem;     
+}
+
+.offerPrice{
+    padding: 5px 10px; overflow: hidden;
+}
+
+.offerPrice img{vertical-align: middle; float: left;}
+.offerPrice div.strikePrice{padding-left: 15px; float: left;}
+
+.desc{padding: 0 15px; font-size: 1rem;}
+.tag{
+    background: afb4c5;
+    border: #afb4c5 solid 1px;
+    padding: 2px 5px;
+    margin: 15px; 
+    width: fit-content; 
+    border-radius:20px;
+    font-size: 0.7rem;
+    color: #afb4c5;
+}
+
+.incrementDecrement{padding: 10px 15px 40px 15px; display: none;}
+
+.decrement, .increment, .placeValue, .addCart{
+    background:#315cbb; 
+    color: #fff; 
+    font-size: 1rem;
+    padding: 0px 9px;
+    width: fit-content;
+    cursor: pointer;
+ }
+
+.placeValue{background:#fff; color: #000; border-bottom: #000 solid 1px; margin: 0 3px;}
+
+.addCart{margin:10px 15px 30px 15px; padding: 7px 30px; border-radius:5px;}
+
